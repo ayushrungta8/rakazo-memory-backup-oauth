@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — Rakazo Memory Backup</title>
+  <style>body{font:17px/1.55 system-ui,sans-serif;max-width:680px;margin:4rem auto;padding:0 1.25rem;color:#202124}a{color:#174ea6}h1{line-height:1.2}</style>
+</head>
+<body>
+  <main>
+    <p><a href="./">Rakazo Memory Backup</a></p>
+    <h1>Privacy policy</h1>
+    <p>Updated 30 September 2026.</p>
+    <p>Rakazo Memory Backup is a self-hosted workflow used only by its owner. It creates backups of the owner's Rakazo memory library, encrypts file contents and names locally with rclone crypt, and stores the encrypted files in the owner's Google Drive.</p>
+    <h2>Google Drive access</h2>
+    <p>Google grants the desktop OAuth client full Drive access so it can use an existing backup folder. The configured workflow uses that access only to create, list, read, and verify backup files in the owner's backup folder. The owner can revoke access in Google Account settings at any time.</p>
+    <h2>Data handling</h2>
+    <p>Backups can contain private conversations, service settings, and credentials. They are encrypted on the owner's server before upload. OAuth tokens and encryption keys are kept in restricted local files controlled by the owner. This workflow does not sell data, use it for advertising, or send it to any third-party service other than Google Drive for storage. This informational site does not collect account data or run analytics.</p>
+    <h2>Retention and deletion</h2>
+    <p>The owner controls the backup folder and decides how long to retain its files. Revoking OAuth access stops future access but does not delete backups already stored in Drive; the owner can delete those files in Drive. The owner can remove local tokens and encryption keys from their computers.</p>
+  </main>
+</body>
+</html>
